@@ -24,7 +24,7 @@ const AddMajor = () => {
     setSuccess(false);
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/majors`, {
+      const res = await fetch(`https://backendminiapp.onrender.com/api/majors`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
